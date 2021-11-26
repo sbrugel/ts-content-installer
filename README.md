@@ -15,9 +15,8 @@ The full list of features of this program are as follows:
 - Conditional content installation: Some assets can only be installed if the user has certain prerequisites, and are skipped if these requirements are not installed
 
 ## Notes
-- Due to the compiled installer being over 100MB (as it contains the FenLine.zip file, which is around 600MB), the .exe for this program has been .gitignore'd. You'll need to build the exe yourself.
 - Currently the order of forms appearing is as follows: LangSelect -> Form1 -> Form2 -> Form3 -> Form5. (Form4 would have been used for something else but has been kept for... reasons
 - Form3: For requirement checking, it is highly recommended to use the Content folder for routes since these contain the route's terrain/scenery data. Some third party packs, such as the AP Weather Pack, may add in an Assets
 folder for several routes (even if the end user does not have said routes). In this case, if the Assets folder is checked, the program will return a false-positive to the user.
-- Form5: The original ZIP file that would be installed to TS is named "FenLine.zip", for reference for any code in this repo that aliases it. For obvious reasons this file has been .gitignore'd, but you can add your own file to the
+- Form5: The original ZIP file that would be installed to TS is named "FenLine.zip", for reference for any code in this repo that aliases it. You can add your own file to the
 installer (through the Resources settings in your IDE; I use Visual Studio 2019) and rename the resource aliasing and extracted folder names where appropiate.
